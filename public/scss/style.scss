@@ -1,0 +1,127 @@
+body {
+  background-color: #f2f2f2;
+  font-size: 13px;
+}
+
+h6 { font-size: 1.5rem; margin-top: 0; }
+p { margin: 0; }
+i.large { font-size: 48px; }
+.card,
+.card-panel { box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14); }
+
+.container-fluid {
+  padding: 1rem 1.5rem;
+  margin: auto;
+}
+.row { margin: 0 -0.75rem; }
+
+.subheader {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.54);
+}
+
+@media only screen and (min-width: 993px) {
+  .main { padding-left: 250px; }
+}
+
+/* nav */
+
+nav {
+  box-shadow: 0 1px 8px #663ab8 !important;
+
+  ul a { padding: 0 12px; }
+  ul a img {
+    line-height: 56px;
+    vertical-align: middle;
+  }
+
+}
+
+nav,
+nav .nav-wrapper i,
+.navbar-fixed {
+  height: 56px;
+  line-height: 56px;
+}
+
+.nav-wrapper {
+  ul a:hover { background-color: transparent; }
+  li:first-child a { padding-left: 24px; }
+  .title { font-size: 1.4rem; }
+}
+
+/* sidenav */
+.side-nav {
+  .divider { margin: 8px 0; }
+
+  .active {
+    background-color: rgba(0,0,0,0.05);
+    a { color: #212121; font-weight: 500; }
+  }
+
+  .subheader {
+    line-height: 24px;
+    height: 32px;
+    margin: 0;
+    padding: 4px 16px;
+    color: #616161;
+    font-weight: normal;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .side-nav {
+    width: 250px;
+    top: 66px;
+    padding: 12px 8px !important;
+    height: calc(100% - 56px);
+
+    li > a,
+    li > a > i.material-icons {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    li > a > i.material-icons { margin-right: 24px; }
+
+    li > a {
+      padding: 0 16px;
+      font-weight: normal;
+      font-size: 13px;
+      color: #616161;
+    }
+
+    li > a:hover { border-radius: 2px; }
+  }
+}
+
+/* cards */
+
+.card .card-action { border-top: none; }
+
+.card .card-action a { color: #fff !important; }
+
+table { font-size: 13px; }
+
+table td:first-of-type,
+table th:first-of-type { padding-left: 24px; }
+
+table td:last-of-type,
+table th:last-of-type { padding-right: 24px; }
+
+table.bordered > thead,
+table.bordered > tbody > tr {
+  border-bottom: 1px solid rgba(0, 0, 0, .060);
+}
+
+.card table tr:last-child { border-bottom: none; }
+
+.card-text { width: calc(100% - 60px); }
+
+.card-icon i {
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, .25);
+}
